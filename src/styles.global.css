@@ -4,14 +4,10 @@ html,
 body {
   height: 100%;
   width: 100%;
-  padding: 1em;
   margin: 0;
   font-family: var(--font-monospace);
-
-  background: var(--color-white-alt);
   color: var(--color-purple);
 
-  overflow: hidden;
 }
 
 body #__next {

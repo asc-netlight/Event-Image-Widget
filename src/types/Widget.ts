@@ -7,9 +7,7 @@ export interface WidgetConfig {
 }
 export interface WidgetAttributes {
   // TODO: type your widget's configuration and data needs
-  name1: string;
-  name2: string;
-  name3: string;
+  imageUrl: string;
 }
 
 export interface WidgetData {

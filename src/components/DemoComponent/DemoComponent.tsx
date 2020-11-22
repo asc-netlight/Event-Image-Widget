@@ -27,8 +27,10 @@ const DemoComponent: FC<Props> = ({ buildTime }) => {
       <h2 data-testid="buildTime" data-value={buildTime}>
         Build Time: {buildTime}
       </h2>
+
+
       <p>This is the widget configuration, you can&apos;t change this.</p>
-      <pre className={styles.code}>{JSON.stringify(config, null, 2)}</pre>
+      <pre className={styles.code}>{JSON.stringify(config.conf.imageUrl, null, 2)}</pre>
       <p>
         This is the widget data, you can change this. Both for the individual client or globally
       </p>
