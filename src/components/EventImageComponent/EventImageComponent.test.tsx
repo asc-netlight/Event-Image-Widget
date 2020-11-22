@@ -5,6 +5,6 @@ import EventImageComponent from "./EventImageComponent";
 describe("Clicker render", () => {
   it("renders without crashing", () => {
     render(<EventImageComponent />);
-    expect(screen.getByText("Loading.."))
+    expect(screen.getByText("Loading.."));
   });
 });
