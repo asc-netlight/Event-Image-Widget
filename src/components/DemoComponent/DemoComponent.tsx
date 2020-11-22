@@ -28,7 +28,6 @@ const DemoComponent: FC<Props> = ({ buildTime }) => {
         Build Time: {buildTime}
       </h2>
 
-
       <p>This is the widget configuration, you can&apos;t change this.</p>
       <pre className={styles.code}>{JSON.stringify(config.conf.imageUrl, null, 2)}</pre>
       <p>
