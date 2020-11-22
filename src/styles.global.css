@@ -7,7 +7,6 @@ body {
   margin: 0;
   font-family: var(--font-monospace);
   color: var(--color-purple);
-
 }
 
 body #__next {

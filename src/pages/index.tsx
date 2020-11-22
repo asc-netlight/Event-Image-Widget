@@ -1,4 +1,3 @@
-import DemoComponent from "components/DemoComponent/DemoComponent";
 import EventImageComponent from "components/EventImageComponent/EventImageComponent";
 import { GetStaticProps, NextPage } from "next";
 
@@ -6,8 +5,7 @@ type Props = {
   buildTime: number;
 };
 
-const IndexPage: NextPage<Props> = ({ buildTime }) => {
-  // return <DemoComponent buildTime={buildTime} />;
+const IndexPage: NextPage<Props> = () => {
   return <EventImageComponent />;
 };
 

@@ -6,7 +6,6 @@ export interface WidgetConfig {
   width: number;
 }
 export interface WidgetAttributes {
-  // TODO: type your widget's configuration and data needs
   imageUrl: string;
 }
 
