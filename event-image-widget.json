@@ -1,0 +1,7 @@
+{
+    "$schema": "../schema.json",
+    "id": "event-image-widget",
+    "sizes": [{ "height": 3, "width": 2 }],
+    "times": { "prep": 5, "shown": 10 },
+    "owners": ["asc@it-minds.dk, mjh@it-minds.dk"]
+  }
