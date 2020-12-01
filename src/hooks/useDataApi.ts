@@ -29,8 +29,8 @@ export const useDataApi: Hook = () => {
   const [id, setId] = useState("global");
   const [widgetData, setWidgetData] = useState<WidgetData>({} as any);
 
-  const isReady = useMemo(() => !!config?.["data-api"], [config]);
-  const url = useMemo(() => (isReady ? `${config["data-api"]}?clientId=${id}` : ""), [
+  const isReady = useMemo(() => !!config?.dataApi, [config]);
+  const url = useMemo(() => (isReady ? `${config.dataApi}?clientId=${id}` : ""), [
     isReady,
     config,
     id

@@ -3,7 +3,7 @@ type Params = {
   logger: (...str: any[]) => void;
 };
 
-export const useLogger = (name: string): Params => {
+export const useLogger = (name = "default"): Params => {
   if (!process.browser)
     return {
       logger: () => {

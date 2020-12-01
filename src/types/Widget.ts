@@ -1,7 +1,7 @@
 export interface WidgetConfig {
-  "client-id": string;
+  clientId: string;
   conf: WidgetAttributes;
-  "data-api": string;
+  dataApi: string;
   height: number;
   width: number;
 }

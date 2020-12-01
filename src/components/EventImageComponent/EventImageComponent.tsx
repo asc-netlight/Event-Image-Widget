@@ -4,12 +4,16 @@ import { FunctionComponent } from "react";
 import styles from "./styles.module.css";
 
 const EventImage: FunctionComponent = () => {
-  const { config } = useConfig();
+  const { hasLoadedConfig, config, id } = useConfig();
 
-  return config.conf ? (
+  return hasLoadedConfig ? (
     <img className={styles.post} src={config.conf.imageUrl} alt="" />
   ) : (
-    <div>Loading..</div>
+    <div>
+      ...loading:
+      <p>config: {JSON.stringify(config ?? {}, null, 2)}</p>
+      <p>id: {id}</p>
+    </div>
   );
 };
 
